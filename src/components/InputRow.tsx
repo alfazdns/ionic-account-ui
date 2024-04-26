@@ -8,7 +8,7 @@ interface InputRowProps {
 
 const InputRow = (props: InputRowProps)=> {
     return (
-        <IonRow style={{marginTop: '24px'}} >
+        <IonRow style={{marginTop: '18px'}} >
             <IonCol>
               <div>
                 <IonLabel>{props.label}</IonLabel>

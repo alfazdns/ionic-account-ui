@@ -104,7 +104,7 @@ Email: ${formValue.email}
             <InputRow label='Email address' input={{type: 'text', placeholder: 'Enter email address', onChange: (e)=> handleChange(e, 'email'), required: true, errorText: handleErrorText('email')}} />
             <InputRow label='Password' input={{type: 'password', placeholder: 'Enter password', passwordToggle: true, required: true, onChange: (e)=> handleChange(e, 'password'), errorText: handleErrorText('password')}} />
             <InputRow label='Confirm password' input={{type: 'password', placeholder: 'Confirm password', passwordToggle: true, required: true, onChange: (e)=> handleChange(e, 'confirmPassword'), errorText: handleErrorText('confirmPassword')}} />
-            <IonRow style={{marginTop: '24px'}}>
+            <IonRow style={{marginTop: '18px'}}>
               <IonCol>
                 <div className='vertical-center' >
                   <IonCheckbox onIonChange={e=> setChecked(e.target.checked)} />
@@ -112,7 +112,7 @@ Email: ${formValue.email}
                 </div>
               </IonCol>
             </IonRow>
-            <IonRow style={{marginTop: '24px'}} >
+            <IonRow style={{marginTop: '30px'}} >
               <IonCol>
                 <IonButton disabled={handleSubmitDisabled()} type='submit' expand='block'>Create Account</IonButton>
               </IonCol>
