@@ -38,7 +38,7 @@ const Input = ({onChange, ...props}: InputProps)=> {
     }
     return (
         <IonInput counter={true}  onIonInput={onChange} className={`custom ${props.errorText && 'ion-invalid'} ${isTouched && 'ion-touched'} `} style={style} {...props} onIonBlur={() => markTouched()}>
-            {props.type === 'password' && (props as InputPasswordProps).passwordToggle && <IonInputPasswordToggle slot="end"></IonInputPasswordToggle>}
+            {props.type === 'password' && (props as InputPasswordProps).passwordToggle && <IonInputPasswordToggle color="dark" slot="end"></IonInputPasswordToggle>}
         </IonInput>
     )
 }
