@@ -1,7 +1,11 @@
 import { Redirect, Route } from 'react-router-dom';
 import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import Home from './pages/Home';
+import Signup from './pages/Signup';
+import TOC from './pages/TOC';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import Login from './pages/Login';
+import './App.css'
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -28,7 +32,7 @@ import '@ionic/react/css/display.css';
 
 /* import '@ionic/react/css/palettes/dark.always.css'; */
 /* import '@ionic/react/css/palettes/dark.class.css'; */
-import '@ionic/react/css/palettes/dark.system.css';
+// import '@ionic/react/css/palettes/dark.system.css';
 
 /* Theme variables */
 import './theme/variables.css';
@@ -40,7 +44,16 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonRouterOutlet>
         <Route exact path="/home">
-          <Home />
+          <Signup />
+        </Route>
+        <Route exact path="/toc">
+          <TOC/>
+        </Route>
+        <Route exact path="/privacy-policy">
+          <PrivacyPolicy/>
+        </Route>
+        <Route exact path="/login">
+          <Login/>
         </Route>
         <Route exact path="/">
           <Redirect to="/home" />

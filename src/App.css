@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+body{
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+}
+
+ion-checkbox::part(container) {
+    border-radius: 6px;
+    border: 1.5px solid #C2C3C4;
+}
+
+ion-button{
+    --border-radius: 10px;
+    --background: #549FF7
+}
+
+.link{
+    color: #0070F3;
+    text-decoration: underline;
+}
+
+.vertical-center{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+ion-input.custom{
+    --padding-bottom: 15px;
+    --padding-end: 10px;
+    --padding-start: 15px;
+    --padding-top: 15px;
+}
+
+.input-wrapper{
+    padding-top: 10px !important;
+}
+
+.input-bottom{
+    border-top: 0 !important;
+}
+
+.signup{
+    max-width: 500px;
+}
+
+.signup-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
